@@ -17,7 +17,7 @@ form.addEventListener('submit', event => {
     return;
   }
 
-  gallery.innerHTML = '';
+  clearGallery();
   loader.classList.remove('hidden');
 
   fetchImages(userInput)
