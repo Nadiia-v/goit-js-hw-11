@@ -1,6 +1,10 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
+export function clearGallery() {
+  gallery.innerHTML = '';
+}
+
 export function renderGallery(images) {
   const gallery = document.querySelector('.gallery');
   const markup = images
